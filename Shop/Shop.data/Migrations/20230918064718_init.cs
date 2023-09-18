@@ -10,7 +10,7 @@ namespace Shop.data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Shapeship",
+                name: "Spaceship",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -26,14 +26,14 @@ namespace Shop.data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Shapeship", x => x.Id);
+                    table.PrimaryKey("PK_Spaceship", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Shapeship");
+                name: "Spaceship");
         }
     }
 }

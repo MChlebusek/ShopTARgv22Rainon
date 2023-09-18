@@ -12,7 +12,7 @@ using Shop.data;
 namespace Shop.data.Migrations
 {
     [DbContext(typeof(ShopContext))]
-    [Migration("20230911073746_init")]
+    [Migration("20230918064718_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -61,7 +61,7 @@ namespace Shop.data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Shapeship");
+                    b.ToTable("Spaceship");
                 });
 #pragma warning restore 612, 618
         }

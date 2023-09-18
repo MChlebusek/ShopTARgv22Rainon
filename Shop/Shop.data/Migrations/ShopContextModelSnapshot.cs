@@ -59,7 +59,7 @@ namespace Shop.data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Shapeship");
+                    b.ToTable("Spaceship");
                 });
 #pragma warning restore 612, 618
         }
