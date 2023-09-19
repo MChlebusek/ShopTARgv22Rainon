@@ -3,6 +3,7 @@ using Shop.data;
 using Shop.Models.Spaceship;
 using ShopCore.Dto;
 using ShopCore.ServiceInterface;
+using Shop.ApplicationServices.Services;
 
 namespace Shop.Controllers
 {
@@ -167,6 +168,8 @@ namespace Shop.Controllers
             vm.CargoWeight = spaceship.CargoWeight;
             vm.CreatedAt = spaceship.CreatedAt;
             vm.ModifiedAt = spaceship.ModifiedAt;
+
+            return View(vm);
         }
         [HttpGet]
         public async Task<IActionResult> DeleteConfirmation(Guid id)
